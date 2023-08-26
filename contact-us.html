@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact-Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="./CSS/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.css" />
+</head>
+
+<body>
+  <header class="bg-primary">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bs-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html"><img src="./Assets/Images/edureka-logo.png" class="img-fluid"
+              alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="menu collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="home.html" target="_blank">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Courses
+                </a>
+                <ul class="dropdown-menu bg-dark ">
+                  <li><a class="dropdown-item" href="frontend.html" target="_blank">Frontend</a></li>
+                  <li><a class="dropdown-item" href="#">Backend</a></li>
+                  <li><a class="dropdown-item" href="#">Database</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faqs.html" target="_blank">FAQs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact-us.html" target="_blank">Contact us</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class="frontend content mt-4">
+    <div class="container">
+      <h2>Contact us</h2>
+      <div class="row my-4 mx-3">
+
+        <!-- HTML Form -->
+        <div class="col-6">
+          <div class="form-floating">
+            <input type="text" class="form-control" id="floatingName" placeholder="Name">
+            <label for="floatingName">Name</label>
+          </div>
+          <div class="form-floating my-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a Message here" id="floatingTextarea2"
+              style="height: 13em"></textarea>
+            <label for="floatingTextarea2">Message</label>
+          </div>
+          <button type="submit" class="btn btn-outline-danger mt-3">Submit</button>
+        </div>
+
+        <!-- Google map -->
+        <div class="col-6">
+          <h6>Direction - Edureka! Learning Center</h6>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16603718.689581655!2d62.09929701642106!3d21.30286155885446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d0329c6bc8609%3A0xc052939508e203cc!2sEdureka*21%20Learning%20Center!5e0!3m2!1sen!2sin!4v1692997838934!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="fixed-bottom text-light text-center fs-5">
+    <p>
+      Author: Edureka <br>
+      <a href="mailto:info@edureka.co" class="text-light">info@edureka.co</a>
+    </p>
+    <div class="fs-2 mb-2">
+      <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+      <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

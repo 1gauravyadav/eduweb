@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Complete Web Developer Course - Build 5 Websites</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="./CSS/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.css" />
+</head>
+
+<body>
+  <header class="bg-primary">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bs-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html"><img src="./Assets/Images/edureka-logo.png" class="img-fluid"
+              alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="menu collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="home.html" target="_blank">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Courses
+                </a>
+                <ul class="dropdown-menu bg-dark ">
+                  <li><a class="dropdown-item" href="frontend.html" target="_blank">Frontend</a></li>
+                  <li><a class="dropdown-item" href="#">Backend</a></li>
+                  <li><a class="dropdown-item" href="#">Database</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faqs.html" target="_blank">FAQs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact-us.html" target="_blank">Contact Us</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class="banner">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <img src="./Assets/Images/home-1.png" class="d-block w-100" alt="banner-one">
+          <h5 id="home1">Discover the World of Learning with Edureka!</h5>
+        </div>
+        <div class="carousel-item">
+          <img src="./Assets/Images/home-2.png" class="d-block w-100" alt="banner-two">
+          <h5 id="home2">Your Journey Begins at Edureka!</h5>
+        </div>
+        <div class="carousel-item active">
+          <img src="./Assets/Images/home-3.png" class="d-block w-100" alt="banner-three">
+          <h5 id="home3">Unlock Your Potential at Edureka!</h5>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="my-4">
+    <div class="row">
+      <div class="col">
+        <div id="piechart" style="height: 500px;"></div>
+      </div>
+      <div class="col floatr">
+        <h3>Popularity of Programming Languages</h3>
+        <p>Explore the Dynamic Landscape of Programming Languages through Our Popularity Rankings - A Visual
+          Representation of the Coding World.</p>
+      </div>
+    </div>
+  </section>
+  <footer class="fixed-bottom text-light text-center fs-5">
+    <p>
+      Author: Edureka! <br>
+      <a href="mailto:info@edureka.co" class="text-light">info@edureka.co</a>
+    </p>
+    <div class="fs-2 mb-2">
+      <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+      <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load('current', { 'packages': ['corechart'] });
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+
+      var data = google.visualization.arrayToDataTable([
+        ['Language', 'Popularity'],
+        ['Python', 28],
+        ['Java', 15],
+        ['JavaScript', 9],
+        ['C#', 6],
+        ['PHP', 5],
+        ['Visual Basic', 2],
+        ['SQL', 1]
+      ]);
+
+      var options = {
+        title: 'Popularity of Programming Languages'
+      };
+
+      var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+      chart.draw(data, options);
+    }
+  </script>
+
+
+</body>
+
+</html>

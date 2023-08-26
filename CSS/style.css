@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'Lobster 1.3';
+    src: url('../Assets/Fonts/Lobster13.woff') format('woff2'),
+        url('../Assets/Fonts/Lobster13.woff2') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    font-family: 'Lobster 1.3';
+    position: relative;
+}
+header {
+    position: sticky;
+    z-index: 11;
+    top: 0;
+    
+}
+.navbar-default{
+    margin-bottom: 0;
+    background: #407afb;
+    border-radius: 0;
+    border:none;
+}
+.navbar-brand{
+    padding: 8px 15px;
+}
+.navbar-brand img{
+    width: 134px
+}
+.menu>ul a, .menu>ul a:hover, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    color:#fff
+}
+.dropdown-menu li a:hover{
+background: #000;
+}
+.carousel-item img {
+    height: 70vh;
+    max-height: 100%;
+    object-fit: cover;
+}
+.carousel-item h5 {
+    position: absolute;
+    color: #fff;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 35px;
+    background: transparent;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid white;
+}
+
+#home1 {
+    transform: translate(-20%);
+    border: 1px solid white;
+}
+#home2 {
+    transform: translate(-10%);
+    border: 1px solid white;
+    text-align: right;
+}
+#home3 {
+    transform: translate(-90%);
+    border: 1px solid white;
+    text-align: right;
+}
+
+.frontend.content{
+    margin-bottom: 13rem;
+}
+.card img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin: 1rem auto;
+}
+
+footer {
+    text-align: center;
+    background: #e7e7e7;
+    padding: 7px 0px ;
+    font-size: 15px;
+}
+footer a {
+    margin: 0 10px;
+    color: white;
+}
+
+.fixed-bottom {
+    background: #000;
+}
+
+.fa {
+    color: white;
+}
+
+.fa-facebook:hover {
+    color: #1877F2;
+}
+
+.fa-google-plus:hover {
+    color: #db4a39;
+}
+
+.fa-linkedin:hover {
+    color: #0072b1;
+}
+
+.btn-outline-danger {
+    color: #0d6efd;
+    border: 1px solid #0d6efd;
+}
+.btn-outline-danger:hover {
+    color: white;
+    border: 1px solid #0d6efd;
+    background-color: #0d6efd;
+}
+.accordion-button {
+    color: white;
+    background-color: #0d6efd;
+}
+
+.btn-outline-success:hover {
+    color: white;
+    border-color: green;
+    background: green;
+}
+.btn-outline-success {
+    color: white;
+    border-color: white;
+    background: transparent;
+}
+
+.d-flex {
+    margin-right: -105px;
+}
+
+.me-2 {
+    margin-left: 10px;
+}
+
+.fs-2 {
+    font-size: 18px!important;
+}
+
+.floatr {
+    margin: auto;
+    padding-bottom: 80px;
+}
+
+.row {
+    margin-right: 0px;
+}
